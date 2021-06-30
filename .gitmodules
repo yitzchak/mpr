@@ -7,3 +7,6 @@
 [submodule "clasp-cl-git"]
 	path = clasp-cl-git
 	url = ssh://dur@dur.hunterwittenborn.com/clasp-cl-git.git
+[submodule "ccl"]
+	path = ccl
+	url = ssh://dur@dur.hunterwittenborn.com/ccl.git
