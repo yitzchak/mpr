@@ -1,0 +1,9 @@
+[submodule "llvm13"]
+	path = llvm13
+	url = ssh://dur@dur.hunterwittenborn.com/llvm13.git
+[submodule "cmucl"]
+	path = cmucl
+	url = ssh://dur@dur.hunterwittenborn.com/cmucl.git
+[submodule "clasp-cl-git"]
+	path = clasp-cl-git
+	url = ssh://dur@dur.hunterwittenborn.com/clasp-cl-git.git
