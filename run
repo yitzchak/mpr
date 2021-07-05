@@ -1,0 +1,3 @@
+#!/usr/bin/env sh
+
+sudo docker run --mount source=shared,target=/home/app/shared -it dur
