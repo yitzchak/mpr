@@ -13,9 +13,10 @@ ENV JUPYTERLAB_DIR=${HOME}/.local/share/jupyter/lab/
 ENV PATH "${HOME}/.local/bin:${PATH}"
 
 
+RUN dpkg --add-architecture i386
 RUN apt-get update
 RUN apt-get dist-upgrade -y
-RUN apt-get install -y wget curl jq gpg git ssh sudo nano gettext locales
+RUN apt-get install -y wget curl jq gpg git ssh sudo nano gettext locales sbcl libzmq3-dev libzmq3-dev:i386
 RUN echo 'en_US.UTF-8 UTF-8' >/etc/locale.gen
 RUN sudo locale-gen
 RUN wget -qO - 'https://proget.hunterwittenborn.com/debian-feeds/makedeb.pub' | gpg --dearmor | sudo tee /usr/share/keyrings/makedeb-archive-keyring.gpg &> /dev/null
@@ -37,3 +38,5 @@ RUN chown -R ${D_UID} dur && \
 
 USER ${D_USER}
 
+RUN wget https://beta.quicklisp.org/quicklisp.lisp && \
+    sbcl --non-interactive --load quicklisp.lisp --eval '(quicklisp-quickstart:install)' --eval '(ql-util:without-prompting (ql:add-to-init-file))'
