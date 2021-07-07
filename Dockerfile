@@ -40,3 +40,8 @@ USER ${D_USER}
 
 RUN wget https://beta.quicklisp.org/quicklisp.lisp && \
     sbcl --non-interactive --load quicklisp.lisp --eval '(quicklisp-quickstart:install)' --eval '(ql-util:without-prompting (ql:add-to-init-file))'
+RUN wget https://repo.anaconda.com/miniconda/Miniconda3-py39_4.9.2-Linux-x86_64.sh && \
+    bash Miniconda3-py39_4.9.2-Linux-x86_64.sh -b -p $HOME/miniconda && \
+    ./miniconda/bin/conda init && \
+    rm Miniconda3-py39_4.9.2-Linux-x86_64.sh
+
