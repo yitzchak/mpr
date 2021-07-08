@@ -10,3 +10,6 @@
 [submodule "ccl"]
 	path = ccl
 	url = ssh://dur@dur.hunterwittenborn.com/ccl.git
+[submodule "cando-git"]
+	path = cando-git
+	url = ssh://dur@dur.hunterwittenborn.com/cando-git.git
