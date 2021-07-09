@@ -32,9 +32,9 @@ WORKDIR ${HOME}
 USER ${D_USER}
 
 USER root
-COPY . ${HOME}/dur/
-RUN chown -R ${D_UID} dur && \
-    chgrp -R ${D_USER} dur
+COPY ./pkg ${HOME}/pkg
+RUN chown -R ${D_UID} pkg && \
+    chgrp -R ${D_USER} pkg
 
 USER ${D_USER}
 

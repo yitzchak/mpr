@@ -1,0 +1,18 @@
+services:
+  debian:
+    build:
+      context: .
+      dockerfile: ./debian/Dockerfile
+    volumes:
+      - type: bind
+        source: ./shared
+        target: /home/app/shared
+  ubuntu:
+    build:
+      context: .
+      dockerfile: ./ubuntu/Dockerfile
+    volumes:
+      - type: bind
+        source: ./shared
+        target: /home/app/shared
+
