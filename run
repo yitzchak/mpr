@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+
+docker run --mount type=bind,source=$(pwd)/pkg,target=/home/app/pkg -it dur_$1:$2

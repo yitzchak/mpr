@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+
+m4 --define=image=$1 --define=tag=$2 Dockerfile | docker build --tag dur_$1:$2 -

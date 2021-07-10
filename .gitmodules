@@ -13,3 +13,6 @@
 [submodule "pkg/ccl"]
 	path = pkg/ccl
 	url = ssh://dur@dur.hunterwittenborn.com/ccl.git
+[submodule "pkg/sbcl"]
+	path = pkg/sbcl
+	url = ssh://dur@dur.hunterwittenborn.com/sbcl.git
