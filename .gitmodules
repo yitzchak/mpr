@@ -1,18 +1,18 @@
 [submodule "pkg/llvm13"]
 	path = pkg/llvm13
-	url = ssh://dur@dur.hunterwittenborn.com/llvm13.git
+	url = ssh://mpr@mpr.hunterwittenborn.com/llvm13.git
 [submodule "pkg/cmucl"]
 	path = pkg/cmucl
-	url = ssh://dur@dur.hunterwittenborn.com/cmucl.git
+	url = ssh://mpr@mpr.hunterwittenborn.com/cmucl.git
 [submodule "pkg/cando-git"]
 	path = pkg/cando-git
-	url = ssh://dur@dur.hunterwittenborn.com/cando-git.git
+	url = ssh://mpr@mpr.hunterwittenborn.com/cando-git.git
 [submodule "pkg/clasp-cl-git"]
 	path = pkg/clasp-cl-git
-	url = ssh://dur@dur.hunterwittenborn.com/clasp-cl-git.git
+	url = ssh://mpr@mpr.hunterwittenborn.com/clasp-cl-git.git
 [submodule "pkg/ccl"]
 	path = pkg/ccl
-	url = ssh://dur@dur.hunterwittenborn.com/ccl.git
+	url = ssh://mpr@mpr.hunterwittenborn.com/ccl.git
 [submodule "pkg/sbcl"]
 	path = pkg/sbcl
-	url = ssh://dur@dur.hunterwittenborn.com/sbcl.git
+	url = ssh://mpr@mpr.hunterwittenborn.com/sbcl.git
