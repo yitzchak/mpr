@@ -19,10 +19,6 @@ jupyter-labextension install cytoscape-clj ipysheet kekule-clj ngl-clj resizable
 
 ## Installing CLASP and CANDO
 
-First download the debian packages [llvm13][] and [cando][]. Then install using `apt-get`.
-```
-apt-get install ./llvm13_13.0.0.r383356.972b6a3a3471-1_amd64.deb ./cando-git_0.4.2.r4461.g0f3d3b238-1_amd64.deb
-```
 If you want JupyterLab then install [miniconda][] and do the following.
 ```
 conda install -c conda-forge jupyterlab jupyter_console
